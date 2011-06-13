@@ -1,0 +1,224 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C1DD5C5D13A6DBB6004C67E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1DD5C5C13A6DBB6004C67E3 /* Foundation.framework */; };
+		C1DD5C6013A6DBB6004C67E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DD5C5F13A6DBB6004C67E3 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C1DD5C5613A6DBB5004C67E3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C1DD5C5813A6DBB5004C67E3 /* haskins_fmri_timer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = haskins_fmri_timer; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1DD5C5C13A6DBB6004C67E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C1DD5C5F13A6DBB6004C67E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C1DD5C6213A6DBB6004C67E3 /* haskins_fmri_timer-Prefix.pch */ = {isa = PBXFileReference; path = "haskins_fmri_timer-Prefix.pch"; sourceTree = "<group>"; };
+		C1DD5C6313A6DBB7004C67E3 /* haskins_fmri_timer.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = haskins_fmri_timer.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1DD5C5513A6DBB5004C67E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1DD5C5D13A6DBB6004C67E3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C1DD5C4D13A6DBB4004C67E3 = {
+			isa = PBXGroup;
+			children = (
+				C1DD5C5E13A6DBB6004C67E3 /* haskins_fmri_timer */,
+				C1DD5C5B13A6DBB5004C67E3 /* Frameworks */,
+				C1DD5C5913A6DBB5004C67E3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C1DD5C5913A6DBB5004C67E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1DD5C5813A6DBB5004C67E3 /* haskins_fmri_timer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1DD5C5B13A6DBB5004C67E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1DD5C5C13A6DBB6004C67E3 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1DD5C5E13A6DBB6004C67E3 /* haskins_fmri_timer */ = {
+			isa = PBXGroup;
+			children = (
+				C1DD5C5F13A6DBB6004C67E3 /* main.m */,
+				C1DD5C6313A6DBB7004C67E3 /* haskins_fmri_timer.1 */,
+				C1DD5C6113A6DBB6004C67E3 /* Supporting Files */,
+			);
+			path = haskins_fmri_timer;
+			sourceTree = "<group>";
+		};
+		C1DD5C6113A6DBB6004C67E3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1DD5C6213A6DBB6004C67E3 /* haskins_fmri_timer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1DD5C5713A6DBB5004C67E3 /* haskins_fmri_timer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1DD5C6613A6DBB7004C67E3 /* Build configuration list for PBXNativeTarget "haskins_fmri_timer" */;
+			buildPhases = (
+				C1DD5C5413A6DBB5004C67E3 /* Sources */,
+				C1DD5C5513A6DBB5004C67E3 /* Frameworks */,
+				C1DD5C5613A6DBB5004C67E3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = haskins_fmri_timer;
+			productName = haskins_fmri_timer;
+			productReference = C1DD5C5813A6DBB5004C67E3 /* haskins_fmri_timer */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1DD5C4F13A6DBB4004C67E3 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C1DD5C5213A6DBB4004C67E3 /* Build configuration list for PBXProject "haskins_fmri_timer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C1DD5C4D13A6DBB4004C67E3;
+			productRefGroup = C1DD5C5913A6DBB5004C67E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1DD5C5713A6DBB5004C67E3 /* haskins_fmri_timer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1DD5C5413A6DBB5004C67E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1DD5C6013A6DBB6004C67E3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C1DD5C6413A6DBB7004C67E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C1DD5C6513A6DBB7004C67E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C1DD5C6713A6DBB7004C67E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "haskins_fmri_timer/haskins_fmri_timer-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C1DD5C6813A6DBB7004C67E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "haskins_fmri_timer/haskins_fmri_timer-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1DD5C5213A6DBB4004C67E3 /* Build configuration list for PBXProject "haskins_fmri_timer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1DD5C6413A6DBB7004C67E3 /* Debug */,
+				C1DD5C6513A6DBB7004C67E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1DD5C6613A6DBB7004C67E3 /* Build configuration list for PBXNativeTarget "haskins_fmri_timer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1DD5C6713A6DBB7004C67E3 /* Debug */,
+				C1DD5C6813A6DBB7004C67E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1DD5C4F13A6DBB4004C67E3 /* Project object */;
+}

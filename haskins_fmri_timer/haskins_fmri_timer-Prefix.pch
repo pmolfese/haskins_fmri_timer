@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'haskins_fmri_timer' target in the 'haskins_fmri_timer' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
