@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C1DD5C5D13A6DBB6004C67E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1DD5C5C13A6DBB6004C67E3 /* Foundation.framework */; };
 		C1DD5C6013A6DBB6004C67E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DD5C5F13A6DBB6004C67E3 /* main.m */; };
+		C1DD5C6B13A6DBFC004C67E3 /* PMEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DD5C6A13A6DBFC004C67E3 /* PMEvent.m */; };
+		C1DD5C6E13A6DE8B004C67E3 /* PMList.m in Sources */ = {isa = PBXBuildFile; fileRef = C1DD5C6D13A6DE8B004C67E3 /* PMList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,8 +29,12 @@
 		C1DD5C5813A6DBB5004C67E3 /* haskins_fmri_timer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = haskins_fmri_timer; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1DD5C5C13A6DBB6004C67E3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C1DD5C5F13A6DBB6004C67E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C1DD5C6213A6DBB6004C67E3 /* haskins_fmri_timer-Prefix.pch */ = {isa = PBXFileReference; path = "haskins_fmri_timer-Prefix.pch"; sourceTree = "<group>"; };
+		C1DD5C6213A6DBB6004C67E3 /* haskins_fmri_timer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "haskins_fmri_timer-Prefix.pch"; sourceTree = "<group>"; };
 		C1DD5C6313A6DBB7004C67E3 /* haskins_fmri_timer.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = haskins_fmri_timer.1; sourceTree = "<group>"; };
+		C1DD5C6913A6DBFC004C67E3 /* PMEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMEvent.h; sourceTree = "<group>"; };
+		C1DD5C6A13A6DBFC004C67E3 /* PMEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMEvent.m; sourceTree = "<group>"; };
+		C1DD5C6C13A6DE8B004C67E3 /* PMList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMList.h; sourceTree = "<group>"; };
+		C1DD5C6D13A6DE8B004C67E3 /* PMList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,10 @@
 			isa = PBXGroup;
 			children = (
 				C1DD5C5F13A6DBB6004C67E3 /* main.m */,
+				C1DD5C6913A6DBFC004C67E3 /* PMEvent.h */,
+				C1DD5C6A13A6DBFC004C67E3 /* PMEvent.m */,
+				C1DD5C6C13A6DE8B004C67E3 /* PMList.h */,
+				C1DD5C6D13A6DE8B004C67E3 /* PMList.m */,
 				C1DD5C6313A6DBB7004C67E3 /* haskins_fmri_timer.1 */,
 				C1DD5C6113A6DBB6004C67E3 /* Supporting Files */,
 			);
@@ -134,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1DD5C6013A6DBB6004C67E3 /* main.m in Sources */,
+				C1DD5C6B13A6DBFC004C67E3 /* PMEvent.m in Sources */,
+				C1DD5C6E13A6DE8B004C67E3 /* PMList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
