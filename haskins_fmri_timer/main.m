@@ -22,7 +22,8 @@ int main (int argc, const char * argv[])
     // insert code here...
     if( argc < 4 )
     {
-        printf("Usage: ./haskins_fmri_timer <afni/fsl/hlmfsl> <input> <output_prefix>\n");
+        printf("Usage: ./haskins_fmri_timer <afni/fsl/Afsl> <input> <output_prefix>\n");
+        return 0;
     }
     
     //uppercaseString
@@ -37,13 +38,13 @@ int main (int argc, const char * argv[])
     //get type
     NSString *fileType = [NSString stringWithCString:argv[1] encoding:1];
     
-    if( [fileType caseInsensitiveCompare:@"FSL"] == 0 )
+    if( [fileType caseInsensitiveCompare:@"AFSL"] == 0 )
     {
         printf("Output: FSL\n");
         printf("ATTN: These files can't be fed directly into FSL, break down by Run!\n");
         createFSLFile(aList, basePath);
     }
-    else if( [fileType caseInsensitiveCompare:@"HLMFSL"] == 0 )
+    else if( [fileType caseInsensitiveCompare:@"FSL"] == 0 )
     {
         printf("Output: FSL for Multilevel Models\n");
         createFSLMLMFiles(aList, basePath);
@@ -92,7 +93,31 @@ PMList* readFile(NSString *pathToFile)
 
 void createAFNIFile(PMList *aListOfEvents, NSString *path)
 {
+    int i, j;
+    NSUInteger totalConditions = [aListOfEvents numberOfConditions];
+    NSUInteger totalRuns = [aListOfEvents numberOfRuns];
     
+    for( i=1; i<=totalConditions; i++ )
+    {
+        NSMutableString *fileToMake = [NSMutableString stringWithCapacity:50];
+        for( j=1; j<=totalRuns; j++ )
+        {
+            NSArray *eventsOfInterest = [aListOfEvents eventsforRun:j condition:i];
+            for( PMEvent *myEvent in eventsOfInterest )
+            {
+                [fileToMake appendString:[myEvent time]];
+                [fileToMake appendString:@" "];
+            }
+            [fileToMake appendString:@"\n"];
+        }
+        
+        //all the write out code:
+        NSString *pathToWrite = [path stringByAppendingString:@"-afni_cond"];
+        pathToWrite = [pathToWrite stringByAppendingString:[[NSNumber numberWithInt:i] stringValue]];
+        pathToWrite = [pathToWrite stringByAppendingString:@".txt"];
+        printf("Wrote: %s\n", [pathToWrite cStringUsingEncoding:1]);
+        [fileToMake writeToFile:pathToWrite atomically:YES encoding:1 error:NULL];
+    }
 }
 
 void createFSLFile(PMList *aListOfEvents, NSString *path)
@@ -156,6 +181,4 @@ void createFSLMLMFiles(PMList *aListOfEvents, NSString *path)
             [fileToMake writeToFile:pathToWrite atomically:YES encoding:1 error:NULL];
         }   //conditions, j
     }   //runs, i
-    
-    
-}
+} //createFSLMLMFiles()
