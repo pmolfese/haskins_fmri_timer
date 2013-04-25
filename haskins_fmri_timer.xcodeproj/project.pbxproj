@@ -121,6 +121,9 @@
 /* Begin PBXProject section */
 		C1DD5C4F13A6DBB4004C67E3 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = C1DD5C5213A6DBB4004C67E3 /* Build configuration list for PBXProject "haskins_fmri_timer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -229,6 +232,7 @@
 				C1DD5C6813A6DBB7004C67E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

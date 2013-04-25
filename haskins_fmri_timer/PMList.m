@@ -36,7 +36,7 @@
 
 -(id)initWithArray:(NSArray *)anArray
 {
-    [self init];
+    self = [self init];
     [self setFullList:[NSMutableArray arrayWithArray: anArray]];
     [self calculateSelfStats];
     return self;

@@ -3,7 +3,7 @@
 //  haskins_fmri_timer
 //
 //  Created by Peter Molfese on 6/13/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 Haskins Labs. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -22,7 +22,8 @@ int main (int argc, const char * argv[])
     // insert code here...
     if( argc < 4 )
     {
-        printf("Usage: ./haskins_fmri_timer <afni/fsl/Afsl> <input> <output_prefix>\n");
+        printf("Usage: ./haskins_fmri_timer <afni/afniam/fsl/Afsl> <input> <output_prefix>\n");
+        printf("Afsl produces files in a more NIPY friendly format");
         return 0;
     }
     
@@ -69,6 +70,10 @@ PMList* readFile(NSString *pathToFile)
     //NSLog(@"reading file");
     NSString *fileContents = [NSString stringWithContentsOfFile:pathToFile encoding:1 error:NULL];
     NSArray *allLines = [fileContents componentsSeparatedByString:@"\n"];
+    if([allLines count] == 1 )
+    {
+        allLines = [fileContents componentsSeparatedByString:@"\r"];
+    }
     NSMutableArray *myEvents = [NSMutableArray arrayWithCapacity:100];
     
     int i = 0;
@@ -119,6 +124,8 @@ void createAFNIFile(PMList *aListOfEvents, NSString *path)
         [fileToMake writeToFile:pathToWrite atomically:YES encoding:1 error:NULL];
     }
 }
+
+
 
 void createFSLFile(PMList *aListOfEvents, NSString *path)
 {
